@@ -13,7 +13,7 @@ display: flex;
 justify-content: center;
 align-items: center;  
 `
-const page = () => {
+const Page = () => {
 
     const [currentImage, setCurrentImage] = useState(0)
     useEffect(() => {
@@ -37,4 +37,4 @@ const page = () => {
     </Home>
 }
 
-export default page
+export default Page
