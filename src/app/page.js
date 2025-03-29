@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Cards from '@/Components/Cards/page.jsx'
 import Videos from '@/Components/Videos/page.jsx'
 import { useEffect, useState } from 'react';
-import Connection from '../../lib/utils.js'
+
 const Home = styled.div`
 `;
 const Images = styled.div`
