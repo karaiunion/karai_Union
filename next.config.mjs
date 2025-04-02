@@ -5,7 +5,18 @@ const nextConfig = {
         styledComponents: true,
     },
     images: {
-        domains: ["i.ytimg.com", 'images.pexels.com'],
+        remotePatterns: [
+        { 
+            protocol: 'https',
+            hostname:'i.ytimg.com',
+            pathname:'**'
+        },
+        {
+            protocol: 'https',
+            hostname: 'images.pexels.com',
+            pathname:'**'
+            }
+            ]
     },
     env: {
         PLACES_API_KEY: process.env.PLACES_API_KEY,
